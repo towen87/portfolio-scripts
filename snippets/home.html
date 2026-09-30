@@ -1,0 +1,139 @@
+<!-- Homepage markup. {{ROOT}} is replaced with the repository address when it goes into Webflow. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="arrow" viewBox="0 0 40 30"><path d="M3 27C10 13 21 7 35 5"/><path d="M28 1.5 35 5 30 11"/></symbol>
+    <symbol id="arrow-up" viewBox="0 0 30 40"><path d="M21 38C9 30 5.5 16 12 3"/><path d="M6.4 8.2 12 3 16.2 9.2"/></symbol>
+    <symbol id="arrow-dr" viewBox="0 0 40 40"><path d="M3 5C17 6 27 15 31 33"/><path d="M24.5 28 31 34 34.5 25.5"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#work">Skip to selected work</a>
+
+<nav class="nav" aria-label="Primary">
+  <ul role="list">
+    <li><a href="#selected" data-explore>Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+<section class="desk" data-desk aria-labelledby="hero-name">
+  <div class="stage" data-stage>
+    <div class="world" data-world>
+      <div class="world__surface" aria-hidden="true"></div>
+      <i class="world__shade" aria-hidden="true"></i>
+      <svg class="world__leaves" aria-hidden="true" viewBox="0 0 360 320" preserveAspectRatio="none">
+        <path d="M40 40C90 10 150 30 170 80 120 90 70 80 40 40Z"/><path d="M150 20C210 0 270 20 290 70 240 80 180 70 150 20Z"/>
+        <path d="M120 110C170 90 220 110 240 160 190 170 140 150 120 110Z"/><path d="M230 120C280 100 330 130 350 180 300 190 250 170 230 120Z"/>
+        <path d="M60 150C110 140 150 170 160 210 110 215 70 190 60 150Z"/><path d="M175 60 200 300" stroke="rgb(58 44 30)" stroke-width="5"/>
+      </svg>
+      <div class="rail" aria-hidden="true"></div><div class="rail__tick" aria-hidden="true"></div>
+      <div class="sw" id="selected" data-sw tabindex="-1">
+        <h2>Selected work</h2>
+        <p>2022–2026</p>
+      </div>
+    </div>
+    <div class="type">
+      <div class="hero" data-hero>
+        <h1 class="hero__name" id="hero-name"><span class="line"><span data-line>Timothy</span></span><span class="line"><span data-line>Owen</span></span></h1>
+        <p class="hero__roles" data-fade>I Make Things<br>People Keep</p>
+        <span class="hero__rule" data-fade aria-hidden="true"></span>
+        <p class="hero__tag" data-fade>Sports. Brands. Print. Photo.<br>And everything in between.</p>
+        <div class="hero__actions" data-fade>
+          <a class="btn" href="#selected" data-explore>Explore work <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <p class="setnote" data-setnote="cards" style="left:5.2cqw;top:55cqw" aria-hidden="true"><span>Trading cards<br>+ product systems</span><svg viewBox="0 0 30 40"><use href="#arrow-up"/></svg></p>
+      <p class="setnote" data-setnote="book" style="left:31.4cqw;top:59.8cqw" aria-hidden="true"><span>Print + editorial</span><svg viewBox="0 0 30 40"><use href="#arrow-up"/></svg></p>
+      <p class="setnote" data-setnote="posters" style="left:55.6cqw;top:59.8cqw" aria-hidden="true"><span>Posters +<br>campaign design</span><svg viewBox="0 0 30 40"><use href="#arrow-up"/></svg></p>
+      <p class="setnote" data-setnote="can" style="left:82cqw;top:58.2cqw" aria-hidden="true"><span>Branding +<br>packaging</span><svg viewBox="0 0 30 40"><use href="#arrow-up"/></svg></p>
+    </div>
+    <ul class="objects" id="work" tabindex="-1" role="list" aria-label="Selected work: four projects on the desk">
+      <li class="obj obj--can" data-obj="can" data-set="85.4 39 10.5 8" data-depth="1">
+        <a class="obj__link" href="/hydrobolt" draggable="false"><figure>
+          <figcaption class="sr-only">Hydrobolt Post Workout Recovery Beverage: brand identity and packaging for a pitch project. Open project.</figcaption>
+          <div class="can__roll" data-roll>
+          <div class="obj__rot" aria-hidden="true"><div class="can__shadow"><i></i><i></i><i></i></div></div>
+          <div class="obj__par"><div class="obj__tilt"><div class="obj__rot">
+              <div class="can" data-can aria-hidden="true"><canvas class="can__art" data-label="hb-label"></canvas></div>
+          </div></div></div>
+          </div>
+        </figure></a>
+        <p class="obj__note" aria-hidden="true"><span>Branding +<br>packaging</span><svg viewBox="0 0 40 30"><use href="#arrow"/></svg></p>
+      </li>
+      <li class="obj obj--posters" data-obj="posters" data-set="61.8 38.6 20 -1.5" data-depth=".3">
+        <a class="obj__link" href="/hockey-posters" draggable="false"><figure>
+          <figcaption class="sr-only">Hockey Wall Posters: athlete posters combining photography, typography and graphic systems. Open project.</figcaption>
+          <div class="obj__rot" aria-hidden="true"><div class="posters__floor"></div></div>
+          <div class="obj__par"><div class="obj__tilt"><div class="obj__rot">
+            <div class="poster" data-poster="c" style="transform:translate(10%,-4.5%) rotate(5deg)"><div class="sheet"></div><div class="art"><img src="{{ROOT}}img/posters/poster-06.webp" alt="" width="900" height="1125" draggable="false"></div></div>
+            <div class="poster" data-poster="b" style="transform:translate(-8%,7%) rotate(-4deg)"><div class="sheet"></div><div class="art"><img src="{{ROOT}}img/posters/poster-01.webp" alt="" width="1400" height="1750" draggable="false"></div></div>
+            <div class="poster poster--a" data-poster="a"><div class="sheet"></div><div class="art"><img src="{{ROOT}}img/posters/poster-04.webp" alt="" width="900" height="1125" draggable="false"></div></div>
+            <div class="roll" data-roll-tube aria-hidden="true"><i class="roll__shadow"></i><i class="roll__tube"><i class="roll__edge"></i></i></div>
+          </div></div></div>
+        </figure></a>
+        <p class="obj__note" aria-hidden="true"><svg viewBox="0 0 30 40"><use href="#arrow-up"/></svg><span>Posters + campaign design</span></p>
+      </li>
+      <li class="obj obj--cards" data-obj="cards" data-set="13.8 37.6 14 -3" data-depth=".45">
+        <a class="obj__link" href="/trading-cards" draggable="false"><figure>
+          <figcaption class="sr-only">Modular Trading Card Systems: a card system for youth hockey associations. Open project.</figcaption>
+          <div class="obj__par"><div class="obj__tilt"><div class="obj__rot">
+            <div class="cards" data-cards>
+              <div class="cards__floor"></div>
+              <div class="tc" data-card><img src="{{ROOT}}img/cards/card-05-front.webp" alt="" width="760" height="1064" draggable="false"></div>
+              <div class="tc" data-card><img src="{{ROOT}}img/cards/card-02-front.webp" alt="" width="760" height="1064" draggable="false"></div>
+              <div class="tc" data-card><img src="{{ROOT}}img/cards/card-06-front.webp" alt="" width="760" height="1064" draggable="false"></div>
+              <div class="tc" data-card><img src="{{ROOT}}img/cards/card-01-front.webp" alt="" width="760" height="1064" draggable="false"></div>
+              <div class="tc" data-card><img src="{{ROOT}}img/cards/card-03-front.webp" alt="" width="760" height="1064" draggable="false"></div>
+              <div class="tc" data-card><img src="{{ROOT}}img/cards/card-04-front.webp" alt="" width="760" height="1064" draggable="false"></div>
+            </div>
+          </div></div></div>
+        </figure></a>
+        <p class="obj__note" aria-hidden="true"><svg viewBox="0 0 30 40"><use href="#arrow-up"/></svg><span>Trading cards<br>+ product systems</span></p>
+      </li>
+      <li class="obj obj--book" data-obj="book" data-set="36.6 39.4 23 -2" data-depth=".22">
+        <a class="obj__link" href="/sports-yearbooks" draggable="false"><figure>
+          <figcaption class="sr-only">Sports Yearbooks Collection: season-in-review yearbooks for youth sports associations. Open project.</figcaption>
+          <div class="obj__par"><div class="obj__tilt"><div class="obj__rot">
+            <div class="bk" data-book>
+              <div class="bk__block"><div class="bk__page"><img src="{{ROOT}}img/home/yb-spread-01.webp" alt="" draggable="false"></div><i class="bk__cast"></i></div>
+              <div class="bk__cover" data-cover>
+                <div class="bk__face bk__face--front"><img src="{{ROOT}}img/home/yb-cover.webp" alt="" width="1100" height="1336" draggable="false"></div>
+                <div class="bk__face bk__face--back"><img src="{{ROOT}}img/home/yb-spread-01.webp" alt="" draggable="false"></div>
+              </div>
+            </div>
+          </div></div></div>
+        </figure></a>
+        <p class="obj__note" aria-hidden="true"><span>Print + editorial</span><svg viewBox="0 0 40 30"><use href="#arrow"/></svg></p>
+      </li>
+    </ul>
+    <a class="dpack" href="/wolseley-dragons" data-dpack aria-label="Wolseley Dragons trading cards, a special-interest project. Open project">
+      <span class="dpack__card"><img src="{{ROOT}}img/dragons/dr-chicky-front.webp" alt="" width="680" height="995" draggable="false"></span>
+      <span class="dpack__pack"><img src="{{ROOT}}img/dragons/dr-pack.webp" alt="" width="560" height="939" draggable="false"></span>
+      <span class="dpack__note" aria-hidden="true">special interests<svg viewBox="0 0 30 30"><path d="M4 26C10 20 17 12 25 5"/><path d="M15 4.5 25 5 24.5 15"/></svg></span>
+    </a>
+    <div class="world world--over" data-world-over aria-hidden="true">
+      <div class="prop prop--ruler"><img src="{{ROOT}}img/home/ruler.webp" alt="" width="1500" height="141" draggable="false"></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="colophon" id="contact" aria-labelledby="colophon-title">
+  <div class="colophon__in">
+    <h2 class="colophon__title" id="colophon-title">Let’s make something cool.</h2>
+    <hr class="colophon__rule">
+    <div class="colophon__grid">
+      <p class="colophon__who"><span class="colophon__name">Timothy Owen</span><span>Designer · Photographer · Visual Storyteller</span><span>Winnipeg, MB</span></p>
+      <ul class="colophon__links" role="list">
+        <li><a href="mailto:towen87@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/timothy-owen-30974660" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/tim.othy.j/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+      <p class="colophon__copy">© 2026 Timothy Owen</p>
+    </div>
+  </div>
+</footer>
+<p class="sr-only" aria-live="polite" data-live></p>
