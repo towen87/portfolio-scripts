@@ -107,6 +107,7 @@
       var rivet = new T.Mesh(new T.CylinderGeometry(1.6, 1.8, .9, 20), metal); rivet.position.set(0, 154.9, 0); body.add(rivet);
 
       var img = new Image(), ready = false, waiting = [];
+      img.crossOrigin = 'anonymous';                          /* the wrap comes from another server: WebGL needs CORS to use it */
       img.onload = function(){ tex.image = img; tex.needsUpdate = true; ready = true; waiting.forEach(function(f){ f(); }); waiting = []; };
       img.src = A['hb-label'].src;
 
@@ -235,6 +236,7 @@
       if(w && h && (w !== cv.width || h !== cv.height)){ cv.width = w; cv.height = h; }
     }
     var hbLabel = new Image(), hbReady = [], hbPackTex = null;
+    hbLabel.crossOrigin = 'anonymous';
     hbLabel.onload = function(){ buildPackTex(); hbReady.forEach(function(f){ f(); }); };
     hbLabel.src = A['hb-label'].src;
 

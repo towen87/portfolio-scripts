@@ -89,6 +89,7 @@
     var rivet = new T.Mesh(new T.CylinderGeometry(1.6, 1.8, .9, 20), metal); rivet.position.set(0, 154.9, 0); body.add(rivet);
 
     var img = new Image(), ready = false, waiting = [];
+    img.crossOrigin = 'anonymous';                            /* the wrap comes from another server: WebGL needs CORS to use it */
     img.onload = function(){ tex.image = img; tex.needsUpdate = true; ready = true; waiting.forEach(function(f){ f(); }); waiting = []; };
     img.src = A['hb-label'].src;
 
@@ -136,7 +137,7 @@
   function CanLabel(canvas){
     var self = this;
     this.c = canvas; this.ctx = canvas.getContext('2d'); this.phi = 0; this.raf = 0;
-    this.img = new Image(); this.img.onload = function(){ self.size(); };
+    this.img = new Image(); this.img.crossOrigin = 'anonymous'; this.img.onload = function(){ self.size(); };
     this.img.src = (A[canvas.dataset.label] || {}).src || '';
   }
   CanLabel.prototype.size = function(){
