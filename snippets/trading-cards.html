@@ -1,0 +1,63 @@
+<!-- Trading Cards desk markup. {{ROOT}} is replaced with the repository address when it goes into Webflow. -->
+<section class="case case--cards case--tc" data-case="cards" aria-labelledby="case-title-cards" hidden>
+  <div class="case__desk">
+    <nav class="case__top" aria-label="Project">
+      <a href="/#selected" data-case-back>← Selected work</a>
+      <span class="case__pn">
+        <a href="/sports-yearbooks"><span>Previous</span>Sports Yearbooks Collection</a>
+        <a href="/hockey-posters"><span>Next</span>Hockey Wall Posters</a>
+      </span>
+    </nav>
+    <div class="case__stage">
+      <div class="world" aria-hidden="true"><div class="world__surface"></div></div>
+      <div class="case__type">
+        <p class="case__eyebrow">Client work</p>
+        <h2 class="case__title" id="case-title-cards" tabindex="-1"><span>Trading</span><span>Cards</span></h2>
+        <span class="case__rule case__rule--accent" aria-hidden="true"></span>
+        <p class="case__kicker">System Design<br>Graphic Design<br>Production</p>
+        <p class="case__tag">One system. Every player.</p>
+        <dl class="case__facts">
+          <div class="case__fact--role"><dt>Role</dt><dd>Art direction, graphic design, system design, production</dd></div>
+          <div class="case__fact--year"><dt>Year</dt><dd>2022–26</dd></div>
+          <div><dt>Project</dt><dd>A modular sports card system built to flex across teams, colourways, player data and collectible formats. Every series shares one construction, a photo window, number, name plate, team mark and stat panel, then takes on its own finish, from gold all-star to chrome. Printed on thick trading-card stock and square-cut. Made on staff at Stafford Studios for youth hockey associations.</dd></div>
+          <div><dt>Deliverables</dt><dd>Card series and parallels, player photography, designed card backs, print production</dd></div>
+        </dl>
+        <p class="case__note">Players shown are fictional. Team marks are used for concept purposes only.</p>
+      </div>
+      <ul class="cobjs" role="list" aria-label="A pile of trading cards from the set">
+        <li class="cobj cobj--pile" style="--cx:66.5;--cy:34.35;--w:67;--h:64.7;--r:0;--z:2">
+          <div class="pile" data-pile>
+            <button class="pcard" type="button" data-ci="1" data-face="front" data-r="10" style="--x:75.37%;--y:28.01%;--r:10deg;z-index:1" aria-label="Riley Stone, Spotlight Series. Inspect this card"><span class="ccard"><img src="{{ROOT}}img/cards/card-02-front.webp" alt="" width="760" height="1064" draggable="false"></span></button>
+            <button class="pcard" type="button" data-ci="0" data-face="back" data-r="6" style="--x:50.85%;--y:22.64%;--r:6deg;z-index:2" aria-label="Thomas Howard, Prism Series, lying face down. Inspect this card"><span class="ccard"><img src="{{ROOT}}img/cards/card-01-back.webp" alt="" width="760" height="1064" draggable="false"></span></button>
+            <button class="pcard" type="button" data-ci="2" data-face="back" data-r="-12" style="--x:23.82%;--y:28.50%;--r:-12deg;z-index:3" aria-label="Chase Anderson, Gameday Series, lying face down. Inspect this card"><span class="ccard"><img src="{{ROOT}}img/cards/card-03-back.webp" alt="" width="760" height="1064" draggable="false"></span></button>
+            <button class="pcard" type="button" data-ci="4" data-face="front" data-r="8" style="--x:80.88%;--y:49.98%;--r:8deg;z-index:4" aria-label="Naomi Park, Modern Series. Inspect this card"><span class="ccard"><img src="{{ROOT}}img/cards/card-05-front.webp" alt="" width="760" height="1064" draggable="false"></span></button>
+            <button class="pcard" type="button" data-ci="2" data-face="front" data-r="-8" style="--x:20.32%;--y:51.44%;--r:-8deg;z-index:5" aria-label="Chase Anderson, Gameday Series. Inspect this card"><span class="ccard"><img src="{{ROOT}}img/cards/card-03-front.webp" alt="" width="760" height="1064" draggable="false"></span></button>
+            <button class="pcard" type="button" data-ci="0" data-face="front" data-r="14" style="--x:15.81%;--y:75.37%;--r:14deg;z-index:6" aria-label="Thomas Howard, Prism Series. Inspect this card"><span class="ccard"><img src="{{ROOT}}img/cards/card-01-front.webp" alt="" width="760" height="1064" draggable="false"></span></button>
+            <button class="pcard" type="button" data-ci="5" data-face="front" data-r="10" style="--x:63.86%;--y:70.97%;--r:10deg;z-index:7" aria-label="Mateo Cruz, Chrome Series. Inspect this card"><span class="ccard"><img src="{{ROOT}}img/cards/card-06-front.webp" alt="" width="760" height="1064" draggable="false"></span></button>
+            <button class="pcard" type="button" data-ci="3" data-face="back" data-r="-12" style="--x:85.38%;--y:81.23%;--r:-12deg;z-index:8" aria-label="Kieran Wolf, Gold Series, lying face down. Inspect this card"><span class="ccard"><img src="{{ROOT}}img/cards/card-04-back.webp" alt="" width="760" height="1064" draggable="false"></span></button>
+            <button class="pcard" type="button" data-ci="1" data-face="back" data-r="-6" style="--x:42.64%;--y:83.67%;--r:-6deg;z-index:9" aria-label="Riley Stone, Spotlight Series, lying face down. Inspect this card"><span class="ccard"><img src="{{ROOT}}img/cards/card-02-back.webp" alt="" width="760" height="1064" draggable="false"></span></button>
+            <button class="pcard" type="button" data-ci="3" data-face="front" data-r="4" style="--x:44.34%;--y:49.98%;--r:4deg;z-index:10" aria-label="Kieran Wolf, Gold Series. Inspect this card"><span class="ccard"><img src="{{ROOT}}img/cards/card-04-front.webp" alt="" width="760" height="1064" draggable="false"></span></button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="cinsp" data-cinsp role="dialog" aria-modal="true" aria-labelledby="cinsp-title" hidden>
+  <div class="insp__scrim" data-cinsp-bg></div>
+  <button class="insp__close" type="button" data-cinsp-close>Close</button>
+  <div class="cinsp__stage">
+    <button class="cinsp__card" type="button" data-cinsp-card aria-label="Turn the card over">
+      <span class="cinsp__inner"><img class="cinsp__face cinsp__face--front" alt=""><img class="cinsp__face cinsp__face--back" alt=""></span>
+    </button>
+  </div>
+  <div class="insp__bar cinsp__bar">
+    <button type="button" data-cinsp-prev>← Previous</button>
+    <span class="insp__count" data-cinsp-count>01 / 06</span>
+    <button type="button" data-cinsp-turn aria-pressed="false">Turn over</button>
+    <button type="button" data-cinsp-next>Next →</button>
+  </div>
+  <p class="insp__cap"><span class="insp__title" id="cinsp-title"></span><span class="insp__meta"></span><span class="insp__note"></span></p>
+</div>
+<p class="sr-only" data-live aria-live="polite"></p>
