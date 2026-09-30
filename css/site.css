@@ -1044,7 +1044,7 @@ html.case-open{overflow:hidden}
   .case--dr .cobj--kid{width:100%;aspect-ratio:530/400;margin:8% 0 0;order:5}
   .case--dr .cobj--spill{display:none}
   .case--dr .cobj--dtorn{order:-1}
-  .case--dr .cobj--cake{width:48%;aspect-ratio:1;margin:6% -12% 0 0;order:6}
+  .case--dr .cobj--cake{width:56%;aspect-ratio:900/912;margin:6% -12% 0 0;order:6}
   .dlist span{font-size:calc(7vw * var(--s))}
   .dpack{position:relative;left:auto;top:auto;width:28vw;margin:6vw auto 14vw 44vw;order:99}
   .case--dr .case__type{width:auto}
@@ -1053,3 +1053,6 @@ html.case-open{overflow:hidden}
   .dinsp__pair{height:min(56svh,64vw)}
 }
 .case--dr .cobj__btn,.case--dr .dseal,.case--dr .dstrip,.case--dr .kid,.case--dr .cake__svg{transform:rotate(calc(var(--r) * 1deg))}
+/* the cake: a photograph of the real slice, cut out, with the desk's shadow under the plate */
+.cake__img{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:contain;pointer-events:none;user-select:none;transform:rotate(calc(var(--r) * 1deg));
+  filter:drop-shadow(.2cqw .4cqw .35cqw rgb(var(--sh) / .32)) drop-shadow(.9cqw 1.4cqw 1.8cqw rgb(var(--sh) / .16))}
